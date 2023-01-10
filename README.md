@@ -2,7 +2,7 @@
 Criei esse repositório para meus projetos em python
 
 
-Projeto e-mail:
+#B#Projeto e-mail:
 
 
   É necessário adaptar código para a resolução do pc onde for utiliza-lo.
