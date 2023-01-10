@@ -3,7 +3,7 @@ Criei esse repositório para meus projetos em python
 
 
 Projeto e-mail. 
-  É necessário adaptar código para a resolução do pc onde for utiliza-lo
+  É necessário adaptar código para a resolução do pc onde for utiliza-lo.
   É ncessário introduzir o link de e-mail desejado.
   O código está adaptado para meu e-mail. 
   
