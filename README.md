@@ -13,6 +13,12 @@ Criei esse repositório para meus projetos em python
   
   O código está adaptado para meu e-mail. 
   
+# Desafio Análise de Dados 
+
+  Desafio executado com sucesso.
+  
+  Análise de dados.
+  
 Obs. sugestões e dúvidas só deixar ai no codigo ou falar comigo nas minhas redes sociais. 
 
 Obrigado. 
