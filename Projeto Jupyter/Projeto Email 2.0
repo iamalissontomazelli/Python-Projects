@@ -1,0 +1,99 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "8340f584",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pyautogui as po\n",
+    "import pyperclip\n",
+    "import time \n",
+    "\n",
+    "po.PAUSE = 3\n",
+    "\n",
+    "# Passo 1 = abrir email\n",
+    "\n",
+    "po.press(\"win\")\n",
+    "po.write(\"brave\")\n",
+    "po.press(\"enter\")\n",
+    "po.write(\"Link do email\")\n",
+    "po.press(\"enter\")\n",
+    "po.click(x=34, y=173, clicks=1)\n",
+    "# passo 2 = escrever o destinario \n",
+    "pyperclip.copy(\"Email do Destinatário\")\n",
+    "po.hotkey(\"ctrl\",\"v\")\n",
+    "po.press(\"tab\")\n",
+    "# passo 3 = escrever assunto \n",
+    "pyperclip.copy(\"Assunto\")\n",
+    "po.hotkey(\"ctrl\", \"v\")\n",
+    "po.press(\"tab\")\n",
+    "# Passo 4 = escrever o texto do email \n",
+    "texto = \"\"\"\n",
+    "Texto do Email. \n",
+    "\"\"\" \n",
+    "\n",
+    "po.write(texto)\n",
+    "# Passo 5 = anexar docs\n",
+    "po.click(x=1393, y=998)\n",
+    "\n",
+    "po.click(x=106, y=288)\n",
+    "# Entrando na pasta onde tem os anexos\n",
+    "po.click(x=386, y=259, clicks=2)\n",
+    "\n",
+    "po.click(x=370, y=229, clicks=2)\n",
+    "\n",
+    "po.click(x=385, y=155, clicks=2)\n",
+    "\n",
+    "po.click(x=367, y=162, clicks=2)\n",
+    "\n",
+    "po.hotkey(\"ctrl\", \"a\")\n",
+    "po.press(\"enter\")\n",
+    "\n",
+    "\n",
+    "# Passo 6 = enviar email\n",
+    "po.hotkey(\"ctrl\", \"enter\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c5938da",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# É necessário executar para ter acesso as localizações de pontos para clicks. \n",
+    "import time \n",
+    "time.sleep(5)\n",
+    "po.position()\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
